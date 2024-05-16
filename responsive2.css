@@ -1,0 +1,131 @@
+/*==========Blanket==============*/
+
+:root{
+    --buttons: red;
+    --buttonnorder: blue;
+    --fontcolor: brown;
+    --navmenucolor: #E0D32F; 
+    --headerfont: 
+    --navbarbackground: #E0D32F;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    line-height: 1.6;
+
+    }
+    
+
+/*=============navigation============*/
+.header{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    height: 90px;
+    background-color: var(--navmenucolor);
+}
+
+nav{
+    background-color: #E0D32F ;
+/*
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    border-bottom: 1px solid grey;
+   max-width: 1424px;
+    padding: 0 10px;
+*/
+
+    
+    height: 90px;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content:space-around;
+    max-width: 1400px;
+    padding: 0px 10px;
+    
+}
+ion-icon{
+    display: none;
+}
+@media (max-width:1024px){
+    .header{
+     
+        justify-content: flex-start;
+       
+    }
+    nav{
+        display: none;
+        float: right;
+     
+    }
+    
+    ion-icon{
+        display:block;
+       align-self: center;
+        font-size: 3em;
+    }
+   
+    ion-icon:hover{
+    cursor:pointer;
+    display:;
+   
+}
+    ion-icon li{
+        color: red;
+    }
+    
+    .menu-list li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+
+a{
+    color: var(--fontcolor);
+    text-decoration: none;
+    font-size: 2em;
+    margin: 0 6rem;
+  
+}
+/*=============header============*/
+header{
+    height: 25vh;
+    text-align: center;
+    display: flex;
+    border: 2px solid ;
+    justify-content: center;
+    align-items: center;
+      
+}
+h1{
+    letter-spacing: 1rem;
+    font-size: 3vw;
+    font-weight: 200;
+}
+
+/*=============container============*/
+
+.container{
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.container > *{
+    border: 2px solid red;
+
+}
+.container img{
+    width: 100%;
+    max-width: 100%;
+}
+
+
